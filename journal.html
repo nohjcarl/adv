@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Journal - Davao–Cebu Tour</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav>
+  <a href="index.html">Home</a>
+  <a href="journal.html">Journal</a>
+  <a href="certificate.html">Certificates</a>
+</nav>
+
+  </header>
+
+  <main id="journal" class="journal"></main>
+
+ 
+  <script>
+    const entries = [
+      {
+        title: "WORLD TECH INFORMATION SOLUTION,INC",
+        date: "NOVEMBER,19 2025",
+        image: "photos/worldtech/worldtech2.jpg",
+        text: "Observations: They are DICT certified as a cybersec assessment provider also crest camp they are expert and experience since 2010 maam elizabeth is a good at teaching, i really love the place tho it is small but it was a fun experience Learnings: Human is the weakest link, you are the shield protect prevent defend, dont use your name as your password make you password 12 characters long"
+      },
+      {
+        title: "RIVAN IT CEBU",
+        date: "NOVEMBER 20, 2025",
+        image: "photos/rivan/rivan11.jpg",
+        text: "Observation: their office is so big the staff was so friendly, sir vincent's teching skills is great he also teaches us the basics also they have complete devivces use for cisco configuration also a good environment for teaching Learning: you can still apply it to your past dream job, we learned how to configure a call center set up phone also we learned how to configure local configuration with firewall to router to switch switch to wap router to end device"
+      },
+      {
+        title: "CODECHUM",
+        date: "NOVEMBER 20, 2025",
+        image: "photos/codechum/codechum3.jpg",
+        text: "Observation: we did not get to experience their office because the meeting was held in a college on cebu but still it was fun and also the room that we were in was cozy and big and mr xavier explained where they came from and how they started showed us the new features of codechum Learnings: we learned about the history of codechum, build something you love and passionate about dont stop learning keep on moving forward"
+      },
+      {
+        title: "MATA TECHNOLOGIES, INC.",
+        date: "NOVEMBER 21, 2025",
+        image: "photos/mata/mata1.jpg",
+        text: "Observation: their office is small yet it was still fun and engaging they let us try their VR their application also showed us what they do the staffs were freindly also sir snow's teaching is good Learnings: we have fun doing and playing with their products such as VR and apps we learned also about their visual map and they gave us tips and tricks"
+      },
+      {
+        title: "T.A.R.S.I.E.R 117",
+        date: "NOVEMBER 22, 2025",
+        image: "photos/tarsier/tarsier4.jpg",
+        text: "Observation: their office is big sir AJ taught us a lot about what they do and showed us the equipment they use also showed us how the office works which is waiting for emergency calls and watching the cctv 24/7 Learnings: we learned how their company works and they also showed us their gadgets and taught us that it is just about programing it is everthing that can make life easier and safer for everyone"
+      },
+      
+    ];
+
+    const journalContainer = document.getElementById("journal");
+    entries.forEach(entry => {
+      const card = document.createElement("div");
+      card.classList.add("journal-card");
+      card.innerHTML = `
+        <img src="${entry.image}" alt="${entry.title}">
+        <div class="journal-content">
+          <h2>${entry.title}</h2>
+          <p class="date">${entry.date}</p>
+          <p>${entry.text}</p>
+        </div>
+      `;
+      journalContainer.appendChild(card);
+    });
+  </script>
+</body>
+</html>
