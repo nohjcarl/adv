@@ -1,4 +1,11 @@
 const photos = [
+   { src: "photos/scan1.jpg", experience: "SCANNED PHOTOS." },
+ { src: "photos/scan2.jpg", experience: "SCANNED PHOTOS." },
+{ src: "photos/scan3.jpg", experience: "SCANNED PHOTOS." },
+{ src: "photos/scan4.jpg", experience: "SCANNED PHOTOS." },
+ { src: "photos/scan5.jpg", experience: "SCANNED PHOTOS." },
+ { src: "photos/scan6.jpg", experience: "SCANNED PHOTOS." },
+  { src: "photos/scan7.jpg", experience: "SCANNED PHOTOS." },
   { src: "photos/worldtech/worldtech1.jpg", experience: "WORLDTECH INFORMATION SOLUTIONS,INC." },
   { src: "photos/worldtech/worldtech2.jpg", experience: "WORLDTECH INFORMATION SOLUTIONS,INC." },
   { src: "photos/worldtech/worldtech3.jpg", experience: "WORLDTECH INFORMATION SOLUTIONS,INC." },
